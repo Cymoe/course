@@ -12,20 +12,21 @@ import { Footer } from "./components/footer";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="bg-black">
       <Header />
-      <main className="bg-background">
+      <main>
         <Hero />
         <VideoSection />
-        <Features />
         <About />
         <Wealth />
         <Value />
+        <Features />
+        
         <Projects />
         <Mission />
         <Testimonials />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
