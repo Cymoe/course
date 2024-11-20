@@ -1,4 +1,7 @@
 import { Coins, Clock, Plane } from "lucide-react";
+import Link from "next/link";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+
 
 export function Wealth() {
   const wealthTypes = [
@@ -23,7 +26,7 @@ export function Wealth() {
   ];
 
   return (
-    <section className="py-4 bg-black">
+    <section className="py-4 bg-black pt-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
           What is Wealth?
@@ -42,6 +45,16 @@ export function Wealth() {
               <p className="text-neutral-400">{type.description}</p>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center mb-40 mt-40">
+          <Link href="/courses">
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              className="text-lg px-8 py-6 flex items-center gap-3"
+            >
+                Get Access
+          </HoverBorderGradient>
+          </Link>
         </div>
       </div>
     </section>

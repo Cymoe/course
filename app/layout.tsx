@@ -16,10 +16,23 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Remote Business Models",
   description: "Build and scale remote businesses to unlock location independence",
-  icons: [
-    { rel: "icon", url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-    { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }
-  ]
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+      {
+        url: "/icon.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
+    ],
+    apple: {
+      url: "/apple-touch-icon.png",
+      sizes: "180x180",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -28,10 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="dark">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-neutral-200`}>
         {children}
       </body>
     </html>

@@ -4,7 +4,6 @@ import { VideoSection } from "./components/video-section";
 import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Wealth } from "./components/wealth";
-import { Value } from "./components/value";
 import { Mission } from "./components/mission";
 import { Projects } from "./components/projects";
 import { Testimonials } from "./components/testimonials";
@@ -17,12 +16,11 @@ export default function HomePage() {
       <main>
         <Hero />
         <VideoSection />
-        
-        <About />
         <Features />
-        <Mission />
-        <Projects />
+        <About />
         <Wealth />
+        <Projects />
+        <Mission />
         <Testimonials />
       </main>
       <Footer />

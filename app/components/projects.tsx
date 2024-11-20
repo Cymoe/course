@@ -1,51 +1,62 @@
 "use client";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
-export const projects = [
+const businessModels = [
   {
-    title: "Stripe",
+    title: "Digital Products",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "Create and sell digital assets, courses, and software that generate passive income. Scale without physical inventory or shipping constraints.",
+    link: "/models/digital-products",
   },
   {
-    title: "Netflix",
+    title: "Automated E-commerce",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Build systems that handle inventory, fulfillment, and customer service automatically. Free yourself from day-to-day operations while maintaining profitability.",
+    link: "/models/automated-ecommerce",
   },
   {
-    title: "Google",
+    title: "SaaS Platforms",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Develop subscription-based software services that solve specific problems. Create recurring revenue with high margins and scalable infrastructure.",
+    link: "/models/saas-platforms",
   },
   {
-    title: "Meta",
+    title: "Content Networks",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Build and monetize content platforms that leverage AI and automation. Create value through curation, aggregation, and distribution.",
+    link: "/models/content-networks",
   },
   {
-    title: "Amazon",
+    title: "Agency Automation",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Transform service businesses into automated systems. Build processes that deliver consistent results without your constant involvement.",
+    link: "/models/agency-automation",
   },
   {
-    title: "Microsoft",
+    title: "Investment Systems",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Create automated systems for identifying and managing investment opportunities. Build portfolios that generate returns while you focus on strategy.",
+    link: "/models/investment-systems",
   },
 ];
 
 export function Projects() {
   return (
-    <section className="py-20 bg-black pt-40">
-      <div className="max-w-5xl mx-auto px-8">
-        <h2 className="text-center text-3xl font-bold text-white mb-8">Opportunity Vehicles</h2>
-        <HoverEffect items={projects} />
+    <section className="py-24 bg-black pt-0">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+            Business Models
+          </h2>
+          <p className="text-lg text-neutral-400">
+            Discover proven remote business models that can be automated and scaled. 
+            Each model is designed for location independence and leverages modern technology for maximum efficiency.
+          </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto">
+          <HoverEffect items={businessModels} />
+        </div>
       </div>
     </section>
   );

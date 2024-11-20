@@ -23,6 +23,16 @@ export function Features() {
   return (
     <section className="py-24 bg-black">
       <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
+            The Modern Business Model
+          </h2>
+          <p className="text-lg text-neutral-400">
+            Traditional business ties you to one location. Modern business gives you freedom. 
+            Learn the three key principles that make location independence possible.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="border border-neutral-800 bg-neutral-900/50 shadow-xl">
