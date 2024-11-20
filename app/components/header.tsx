@@ -13,15 +13,13 @@ export function Header() {
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6">
-          <Link href="/about" className="text-sm font-medium text-neutral-400 hover:text-neutral-200 transition-colors">
-            About
-          </Link>
-          <Link href="/features" className="text-sm font-medium text-neutral-400 hover:text-neutral-200 transition-colors">
-            Features
-          </Link>
-          <Link href="/community" className="text-sm font-medium text-neutral-400 hover:text-neutral-200 transition-colors">
+        <Link href="/community" className="text-sm font-medium text-neutral-400 hover:text-neutral-200 transition-colors">
             Community
           </Link>
+          <Link href="/pricing" className="text-sm font-medium text-neutral-400 hover:text-neutral-200 transition-colors">
+            Pricing
+          </Link>
+         
         </nav>
 
         <div className="flex items-center space-x-4">
