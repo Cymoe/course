@@ -42,9 +42,9 @@ export const projects = [
 
 export function Projects() {
   return (
-    <section className="py-20 bg-black">
+    <section className="py-20 bg-black pt-40">
       <div className="max-w-5xl mx-auto px-8">
-        <h2 className="text-center text-3xl font-bold text-white mb-8">Featured Projects</h2>
+        <h2 className="text-center text-3xl font-bold text-white mb-8">Opportunity Vehicles</h2>
         <HoverEffect items={projects} />
       </div>
     </section>

@@ -17,13 +17,12 @@ export default function HomePage() {
       <main>
         <Hero />
         <VideoSection />
-        <About />
-        <Wealth />
-        <Value />
-        <Features />
         
-        <Projects />
+        <About />
+        <Features />
         <Mission />
+        <Projects />
+        <Wealth />
         <Testimonials />
       </main>
       <Footer />

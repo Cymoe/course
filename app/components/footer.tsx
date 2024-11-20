@@ -1,9 +1,10 @@
 import { Globe2 } from "lucide-react";
 import Link from "next/link";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 export function Footer() {
   return (
-    <footer className=" border-neutral-800 bg-black">
+    <footer className="border-neutral-800 bg-black">
       <div className="container mx-auto px-4 py-20">
         <div className="grid grid-cols-12 gap-8">
           {/* Brand Column - Takes up 4 columns */}
@@ -79,6 +80,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
+
 
         <div className="border-t border-neutral-800 mt-20 pt-8">
           <p className="text-center text-sm text-neutral-400">

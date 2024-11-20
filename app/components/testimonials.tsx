@@ -1,4 +1,6 @@
 "use client";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import Link from "next/link";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 const testimonials = [
@@ -63,10 +65,19 @@ const secondRowTestimonials = [
 
 export function Testimonials() {
   return (
-    <section className="relative py-20 overflow-hidden bg-black">
+    <section className="relative py-20 overflow-hidden bg-black pt-0">
+        <div className="flex justify-center mb-40">
+          <Link href="/courses">
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              className="text-lg px-8 py-6 flex items-center gap-3"
+            >
+                Get Access
+              </HoverBorderGradient>
+            </Link>
+          </div>
       <div className="absolute inset-0 bg-grid-white/[0.05]" />
       <div className="absolute pointer-events-none inset-0 bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      
       <div className="relative z-20 container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
