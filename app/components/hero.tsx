@@ -8,7 +8,7 @@ export function Hero() {
     <div className="relative flex items-center justify-center overflow-hidden bg-black bg-grid-small-white/[0.2] relative pt-40 pb-10">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       
-      <div className="relative z-20 container mx-auto px-4 py-2 text-center">
+      <div className="relative z-20 container mx-auto px-4 py-200 text-center">
         <div className="flex justify-center mb-6">
           <Link href="/pricing" className="text-sm px-3 py-1 border border-neutral-700 rounded-full text-neutral-400 flex items-center gap-2 animate-[fade_3s_ease-in-out_infinite] hover:text-neutral-300 hover:border-neutral-600 transition-colors">
             <span>✨</span>
@@ -25,7 +25,7 @@ export function Hero() {
         </p>
         <div className="flex items-center justify-center mb-8">
           <Link href="/courses">
-            <HoverBorderGradient className="group px-6">
+            <HoverBorderGradient className="group px-6 w-[175px]">
               Get Access
               <ArrowRight className="ml-2 h-4 w-4 inline group-hover:translate-x-1 transition-transform" />
             </HoverBorderGradient>
