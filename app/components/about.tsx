@@ -3,8 +3,8 @@ export function About() {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">What is the idea?</h2>
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-lg text-muted-foreground">
+          <div className="max-w-3xl mx-auto">
+            <div className="space-y-6 text-lg text-muted-foreground text-center">
               <p>
                 Build, buy, and operate multiple businesses from a distance. Liberate yourself
                 from the shackles of wage slavery, focusing instead on high-value tasks rather
@@ -19,14 +19,6 @@ export function About() {
                 self-sustaining, move on to the next one, repeat the process and continue to
                 expand your portfolio.
               </p>
-            </div>
-            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src="/heromyles.jpg"
-                alt="Person enjoying remote work lifestyle by the ocean"
-                className="object-cover w-full h-full"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
           </div>
         </div>

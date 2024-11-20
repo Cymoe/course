@@ -8,6 +8,7 @@ export default function Component() {
     {
       id: 1,
       title: "Coding with AI",
+      subtitle: "AI-Powered Development Fundamentals",
       description: "Learn to leverage AI tools for efficient coding and problem-solving.",
       image: "/placeholder.svg?height=400&width=600",
       progress: 100,
@@ -15,6 +16,7 @@ export default function Component() {
     {
       id: 2,
       title: "Building with AI Agents",
+      subtitle: "Advanced Agent Architecture",
       description: "Explore the world of AI agents and how to build intelligent systems.",
       image: "/placeholder.svg?height=400&width=600",
       progress: 0,
@@ -22,6 +24,7 @@ export default function Component() {
     {
       id: 3,
       title: "Themed Image Generation",
+      subtitle: "Creative AI Image Synthesis",
       description: "Master the art of generating themed images using AI technologies.",
       image: "/placeholder.svg?height=400&width=600",
       progress: 0,
@@ -74,6 +77,7 @@ export default function Component() {
         </div>
       </header>
       <main className="container mx-auto px-4 py-8">
+        <h1 className="text-3xl font-bold mb-6">Available Courses</h1>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {courses.map((course) => (
             <Card
@@ -93,6 +97,7 @@ export default function Component() {
                 />
                 <div className="space-y-2 p-6">
                   <h2 className="text-2xl font-bold">{course.title}</h2>
+                  <h3 className="text-lg text-white/80">{course.subtitle}</h3>
                   <p className="text-sm/relaxed text-white/60">{course.description}</p>
                 </div>
               </CardContent>

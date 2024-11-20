@@ -1,20 +1,31 @@
-import { Hero } from "@/app/components/hero";
-import { Features } from "@/app/components/features";
-import { About } from "@/app/components/about";
-import { Wealth } from "@/app/components/wealth";
-import { Value } from "@/app/components/value";
-import { Mission } from "@/app/components/mission";
-import { ArrowRight, Star } from "lucide-react";
+import { Header } from "./components/header";
+import { Hero } from "./components/hero";
+import { VideoSection } from "./components/video-section";
+import { Features } from "./components/features";
+import { About } from "./components/about";
+import { Wealth } from "./components/wealth";
+import { Value } from "./components/value";
+import { Mission } from "./components/mission";
+import { Projects } from "./components/projects";
+import { Testimonials } from "./components/testimonials";
+import { Footer } from "./components/footer";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background">
-      <Hero />
-      <Features />
-      <About />
-      <Wealth />
-      <Value />
-      <Mission />
-    </main>
+    <>
+      <Header />
+      <main className="bg-background">
+        <Hero />
+        <VideoSection />
+        <Features />
+        <About />
+        <Wealth />
+        <Value />
+        <Projects />
+        <Mission />
+        <Testimonials />
+      </main>
+      <Footer />
+    </>
   );
 }

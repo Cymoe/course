@@ -17,11 +17,11 @@ export function Value() {
         <div className="max-w-3xl mx-auto">
           <div className="space-y-6">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <div className="mt-1">
+              <div key={index} className="flex items-center justify-center gap-4">
+                <div>
                   <Check className="h-5 w-5 text-primary" />
                 </div>
-                <p className="text-lg text-muted-foreground">{benefit}</p>
+                <p className="text-lg text-muted-foreground text-center">{benefit}</p>
               </div>
             ))}
           </div>
